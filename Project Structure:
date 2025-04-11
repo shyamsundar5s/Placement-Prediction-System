@@ -1,0 +1,10 @@
+placement-predictor/
+│
+├── app.py                # Flask app
+├── model.pkl             # Trained ML model
+├── database.db           # SQLite database
+├── templates/
+│   └── index.html        # Web interface
+├── static/
+│   └── style.css         # (optional) CSS
+└── train_model.py        # Script to train the ML model
