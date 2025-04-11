@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Predictor</title>
+</head>
+<body>
+    <h2>Placement Prediction System</h2>
+    <form method="POST">
+        <label>CGPA:</label><br>
+        <input type="text" name="cgpa" required><br><br>
+        <label>Internships:</label><br>
+        <input type="number" name="internships" required><br><br>
+        <label>Projects:</label><br>
+        <input type="number" name="projects" required><br><br>
+        <label>Extracurricular (0/1):</label><br>
+        <input type="number" name="extracurricular" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if result %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
